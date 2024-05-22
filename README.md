@@ -1,5 +1,5 @@
 # My_Leetcode_Records-LeetHub
-My pathetic Leetcode records until I gave up being an engineer, push by LeetHub.
+My pathetic Leetcode records until I gave up being an engineer, push by LeetHub-3.0.
 
 Leetcode Profile：https://leetcode.com/u/peter890331/
 
@@ -7,7 +7,7 @@ Leetcode Profile：https://leetcode.com/u/peter890331/
 
 Start from 2023/11/30, Excelsior, I hope so, QQ
 
-But push by LeetHub instead from 2024/05/22, old repository : [My_Leetcode_Records][1]
+But push by LeetHub-3.0 instead from 2024/05/22, old repository : [My_Leetcode_Records][1]
 
 Fuck, why is everyone else so smart? Their solutions are always amazing ==
 
