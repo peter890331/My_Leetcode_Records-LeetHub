@@ -1,6 +1,8 @@
 # My_Leetcode_Records-LeetHub
 My pathetic Leetcode records until I gave up being an engineer, push by LeetHub-3.0.
 
+Categorize by problem in master branch, including question descriptions and submitted answers.
+
 Leetcode Profile：https://leetcode.com/u/peter890331/
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/peter890331?theme=wtf&font=Bai%20Jamjuree&ext=activity)
