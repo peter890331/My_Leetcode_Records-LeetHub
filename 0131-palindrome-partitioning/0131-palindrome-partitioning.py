@@ -12,13 +12,15 @@ class Solution(object):
         
         for i in range(self.n):
             self.dp[i][i] = 1
+        print("dp: ", self.dp)
         
         for i in range(self.n-1):
             self.dp[i][i+1] = int(s[i]==s[i+1])
+        print("dp: ", self.dp)
         
-        for length  in range(3, self.n+1):
-            for i in range(self.n-length +1):
-                j = i+length -1
+        for length in range(3, self.n+1):
+            for i in range(self.n-length+1):
+                j = i+length-1
                 if s[i]==s[j]:
                     self.dp[i][j] = self.dp[i+1][j-1]
                 else:
