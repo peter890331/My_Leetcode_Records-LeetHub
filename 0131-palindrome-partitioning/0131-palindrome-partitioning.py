@@ -15,7 +15,8 @@ class Solution(object):
         print("dp: ", self.dp)
         
         for i in range(self.n-1):
-            self.dp[i][i+1] = int(s[i]==s[i+1])
+            if int(s[i]==s[i+1]):
+                self.dp[i][i+1] = 1
         print("dp: ", self.dp)
         
         for length in range(3, self.n+1):
@@ -23,12 +24,10 @@ class Solution(object):
                 j = i+length-1
                 if s[i]==s[j] and self.dp[i+1][j-1]:
                     self.dp[i][j] = 1
-                else:
-                    self.dp[i][j] = 0
-        
+        print("dp: ", self.dp)
+
         ans_ = []
         self.dfs(0, ans_)
-        print("dp: ", self.dp)
         return self.ans
     
     def dfs(self, i, ans_):
