@@ -7,7 +7,7 @@ class Solution(object):
         self.s = s
         self.n = len(s)
         self.dp = [[0] * self.n for _ in range(self.n)]
-        print(self.dp)
+        print("dp: ", self.dp)
         self.ans = []
         
         for i in range(self.n):
@@ -26,7 +26,7 @@ class Solution(object):
         
         ans_ = []
         self.dfs(0, ans_)
-        
+        print("dp: ", self.dp)
         return self.ans
     
     def dfs(self, i, ans_):
