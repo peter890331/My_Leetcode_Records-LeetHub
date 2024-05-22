@@ -38,3 +38,6 @@ class Solution(object):
                 ans_.append(self.s[i:j+1])
                 self.dfs(j+1, ans_)
                 ans_.pop()
+                
+# dp + dfs.
+# Reference from 【每日一题】131. Palindrome Partitioning, 5/9/2021, https://youtu.be/OqYHNDmG13g.
