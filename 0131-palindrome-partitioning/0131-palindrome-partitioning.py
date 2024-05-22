@@ -7,6 +7,7 @@ class Solution(object):
         self.s = s
         self.n = len(s)
         self.dp = [[0] * self.n for _ in range(self.n)]
+        print(self.dp)
         self.ans = []
         
         for i in range(self.n):
