@@ -6,7 +6,7 @@ public:
         int i = 0;
         int j = 0;
         while(i < s_){
-            if (s[i] == t[j]){
+            if (j < t_ & s[i] == t[j]){
                 i++;
                 j++;
             }
