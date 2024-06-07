@@ -2,7 +2,7 @@
 class Trie {
 public:
     Trie* children[26]; // 指向26個子節點的指針陣列，每個節點最多有 26 個子節點，對應英文字母 a 到 z。
-    bool isEnd;         // 標記是否為 dictionary 中某個字根 (roots) 的結尾。
+    bool isEnd;         // 標記到該節點是否為 dictionary 中某個字根 (roots) 的結尾。
 
     // 構造函數。
     Trie() {                                // 初始化根節點。
@@ -38,7 +38,7 @@ public:
     string search(string word) {
         Trie* node = root;                          // 從根節點開始。
         string result;
-        for (char c : word) {                       // 遍歷 word 的字母。
+        for (char c : word) {                       // 遍歷單詞的字母。
             int i = c - 'a';                        // 計算字母對應的索引。
             if (node->children[i] == nullptr) {
                 return word;                        // 如果對應索引的子節點為空，則返回單詞本身。
