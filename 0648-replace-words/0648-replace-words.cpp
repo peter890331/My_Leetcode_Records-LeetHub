@@ -60,7 +60,7 @@ public:
 
         stringstream ss(sentence);      // 使用字符串流來分割句子中的單詞。stringstream 是 C++ 一個專門處理讀取、寫入、處理字串的一個類別。
         string word, result;
-        while (ss >> word) {            // 使用 >> 操作符從字符串流中提取單詞。0
+        while (ss >> word) {            // 使用 >> 操作符從字符串流中提取單詞。
             if (!result.empty()) {
                 result += " ";          // 若 result 中已有某個字根 (roots) 或是單詞本身，添加空格分隔。
             }
