@@ -1,7 +1,9 @@
 class Solution {
 public:
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
-        unordered_map<int, int> count;
+        // unordered_map<int, int> count;
+        map<int, int> count;
+        
         vector<int> ans;
         vector<int> remaining;
         int n1 = arr1.size();
@@ -20,17 +22,24 @@ public:
             count.erase(temp);
         }
 
+        // for (auto it: count) {
+        //     while (it.second > 0) {
+        //         remaining.push_back(it.first);
+        //         it.second--;
+        //     }
+        // }
+
+        // sort(remaining.begin(), remaining.end());
+
+        // for (int i=0; i<remaining.size(); i++) {
+        //     ans.push_back(remaining[i]);
+        // }
+
         for (auto it: count) {
             while (it.second > 0) {
-                remaining.push_back(it.first);
+                ans.push_back(it.first);
                 it.second--;
             }
-        }
-
-        sort(remaining.begin(), remaining.end());
-
-        for (int i=0; i<remaining.size(); i++) {
-            ans.push_back(remaining[i]);
         }
 
         return ans;
