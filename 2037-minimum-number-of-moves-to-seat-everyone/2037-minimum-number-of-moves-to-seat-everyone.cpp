@@ -12,4 +12,3 @@ public:
 };
 
 // lancertech6's solution.
-// No time to watch yet. 
