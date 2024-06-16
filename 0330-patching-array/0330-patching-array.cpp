@@ -23,5 +23,5 @@ public:
     }
 };
 
-// Greedy Approach
+// Greedy algorithm
 // bhanu_bhakta's solution.
