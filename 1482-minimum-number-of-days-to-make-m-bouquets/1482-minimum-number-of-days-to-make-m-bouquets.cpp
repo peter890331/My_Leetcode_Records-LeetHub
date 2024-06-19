@@ -36,5 +36,5 @@ public:
     }
 };
 
-// binary search.
+// binary search, binary search is O(log n).
 // Reference from 【每日一题】1482. Minimum Number of Days to Make m Bouquets, 8/21/2020, https://youtu.be/D_Pq9SqEwsc.
