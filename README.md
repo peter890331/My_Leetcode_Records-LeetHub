@@ -20,7 +20,7 @@ This plugin automatically pushes your code to GitHub when you pass all tests on 
   - Github：https://github.com/raphaelheinz/LeetHub-3.0    
   - Chrome Web Store：https://chromewebstore.google.com/u/1/detail/leethub-v3/kdkgpjpenaeoodajljkflmlnkoihkmda
 
-## 一些資源
+## Some Resources
 1. [【每日一题】, Huifeng Guan, YouTube][2]
 2. [【每日一题】, Huifeng Guan, Github][6]
 3. [花花酱, Hua Hua, YouTube][3]
