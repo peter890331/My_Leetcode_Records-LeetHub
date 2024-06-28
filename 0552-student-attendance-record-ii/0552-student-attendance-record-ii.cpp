@@ -19,5 +19,5 @@ public:
     }
 };
 
-// anwendeng.
+// anwendeng's solution.
 // No time to watch yet. 
