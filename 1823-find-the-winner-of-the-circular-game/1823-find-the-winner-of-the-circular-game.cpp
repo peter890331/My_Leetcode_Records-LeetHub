@@ -7,8 +7,8 @@ public:
         }
         int from_friend = 0;
         while(friends.size() > 1){
-            int remove = (from_friend+k-1)%friends.size();
-            friends.erase(friends.begin()+remove);
+            int remove = (from_friend + k - 1) % friends.size();
+            friends.erase(friends.begin() + remove);
             from_friend = remove;
         }
         return friends[0];
