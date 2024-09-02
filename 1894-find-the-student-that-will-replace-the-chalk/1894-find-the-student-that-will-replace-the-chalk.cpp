@@ -1,9 +1,9 @@
 class Solution {
 public:
     int chalkReplacer(vector<int>& chalk, int k) {
-        // long long sum = 0;
-        // for (int chalk_: chalk) sum += chalk_;
-        long long sum = accumulate(chalk.begin(), chalk.end(), 0);
+        long long sum = 0;
+        for (int chalk_: chalk) sum += chalk_;
+        // long long sum = accumulate(chalk.begin(), chalk.end(), 0);  // Runtime Error 
         int remain = k % sum;
         for (int i=0; i<chalk.size(); i++){
             if (remain < chalk[i]) return i;
