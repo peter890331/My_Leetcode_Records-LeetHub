@@ -10,7 +10,12 @@ public:
 
         for (string word: words){
             bool flag = true;
-            for (char word_char: word) if (allowed_map[word_char] != true) flag = false;
+            for (char word_char: word){
+                if (allowed_map[word_char] != true){
+                    flag = false;
+                    break;
+                }
+            }
             if (flag) ans++;
         }
 
