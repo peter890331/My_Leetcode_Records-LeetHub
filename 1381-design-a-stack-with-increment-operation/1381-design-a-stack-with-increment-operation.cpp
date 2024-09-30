@@ -19,7 +19,6 @@ public:
     int pop() {
         if (size == 0) return -1;
         int temp = mystack[size - 1];
-        mystack.pop_back();
         size--;
         return temp;
     }
