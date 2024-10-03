@@ -45,8 +45,8 @@ public:
 // subarraySum % p = rem =>
 // (prefixSum_j - prefixSum_i) % p = rem =>
 // (prefixSum_j % p - prefixSum_i % p) % p = rem =>
-// (prefixSum_j % p) - (prefixSum_i % p) ≡ rem (mod p) =>
+//  prefixSum_j % p - prefixSum_i % p  ≡ rem (mod p) =>
 // -(prefixSum_i % p) ≡ -(prefixSum_j % p) + rem (mod p) =>
-// prefixSum_i % p ≡ (prefixSum_j % p) - rem (mod p) =>
 // prefixSum_i % p ≡ (prefixSum_j % p - rem) (mod p) =>
+// prefixSum_i % p = (prefixSum_j % p - rem) % p =>
 // prefixSum_i % p = (prefixSum_j % p - rem + p) % p
