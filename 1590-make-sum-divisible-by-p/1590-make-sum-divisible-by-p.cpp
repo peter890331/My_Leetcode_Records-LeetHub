@@ -1,0 +1,52 @@
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+public:
+    int minSubarray(vector<int>& nums, int p) {
+        long totalSum = 0;
+        for (int num : nums) {
+            totalSum += num;
+        }
+
+        // Find the remainder when total sum is divided by p
+        int rem = totalSum % p;
+        if (rem == 0) return 0; // If the remainder is 0, no subarray needs to be removed
+
+        unordered_map<int, int> prefixMod;
+        prefixMod[0] = -1;  // Initialize for handling full prefix
+        long prefixSum = 0;
+        int minLength = nums.size();
+
+        for (int i = 0; i < nums.size(); ++i) {
+            prefixSum += nums[i];
+            int currentMod = prefixSum % p;
+            int targetMod = (currentMod - rem + p) % p;
+
+            if (prefixMod.find(targetMod) != prefixMod.end()) {
+                minLength = min(minLength, i - prefixMod[targetMod]);
+            }
+
+            prefixMod[currentMod] = i;
+        }
+
+        return minLength == nums.size() ? -1 : minLength;
+    }
+};
+
+// withaarzoo's solution.
+
+// rem = totalSum % p
+// subarraySum = prefixSum_j - prefixSum_i
+// (a - b) % p = (a % p - b % p) % p
+
+// find：
+// subarraySum % p = rem =>
+// (prefixSum_j - prefixSum_i) % p = rem =>
+// (prefixSum_j % p - prefixSum_i % p) % p = rem =>
+// (prefixSum_j % p) - (prefixSum_i % p) ≡ rem (mod p) =>
+// -(prefixSum_i % p) ≡ -(prefixSum_j % p) + rem (mod p) =>
+// prefixSum_i % p ≡ (prefixSum_j % p) - rem (mod p) =>
+// prefixSum_i % p ≡ (prefixSum_j % p - rem) (mod p) =>
+// prefixSum_i % p = (prefixSum_j % p - rem + p) % p
