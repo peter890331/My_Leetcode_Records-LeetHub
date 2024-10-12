@@ -9,7 +9,7 @@ public:
         long long m = 0;
         while (a <= b){
             m = a + (b - a) / 2;
-            cout<<"a: "<<a<<", b: "<<b<<", m: "<<m<<endl;
+            // cout<<"a: "<<a<<", b: "<<b<<", m: "<<m<<endl;
             long long square = m * m;
             if (square > x){
                 b = m - 1;
@@ -21,7 +21,7 @@ public:
                 a = m + 1;
             }
         }
-        return round(b);
+        return b;
     } 
 };
 
