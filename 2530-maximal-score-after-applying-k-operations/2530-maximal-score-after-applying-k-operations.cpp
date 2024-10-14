@@ -16,3 +16,5 @@ public:
         return ans;
     }
 };
+
+// Reference from 【筆記】常用C++ STL：priority_queue, https://yuihuang.com/cpp-stl-priority-queue/.
