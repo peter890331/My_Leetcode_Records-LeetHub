@@ -8,10 +8,10 @@ public:
             pq.push(nums[i]);
         }
         for (int j=0; j<k; j++){
-            float largest = pq.top();
+            auto largest = pq.top();
             ans += largest;
             pq.pop();
-            pq.push(ceil(largest/3));
+            pq.push(ceil(static_cast<double>(largest)/3));
         }
         return ans;
     }
