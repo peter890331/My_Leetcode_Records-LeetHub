@@ -20,3 +20,5 @@ public:
         return num;
     }
 };
+
+// withaarzoo's solution.
