@@ -1,15 +1,22 @@
 class Solution {
 public:
     int maximumSwap(int num) {
-        int ans = num;
-        string ans_ = "";
         string num_ = to_string(num);
-        for (int i=num_.size()-1; i>0; i--){
-            ans_ = num_;
-            ans_ = num_[i] + ans_;
-            ans_.erase(i+1,1);
-            ans = max(ans, stoi(ans_));
+        int n = num_.size();
+        vector<int> last(10, -1);
+
+        for (int i=0; i<n; i++){
+            last[num_[i] - '0'] = i;
         }
-        return ans;
+
+        for (int i=0; i<n; i++){
+            for (int j=9; j>(num_[i] - '0'); j--){
+                if (last[j] > i){
+                    swap(num_[i], num_[last[j]]);
+                    return stoi(num_);
+                }
+            }
+        }
+        return num;
     }
 };
