@@ -16,7 +16,6 @@ public:
                     count = 1;
                 }
             }
-
             else{
                 ans += to_string(count);
                 ans += temp;
@@ -28,7 +27,7 @@ public:
 
         ans += to_string(count);
         ans += temp;
-        
+
         return ans;
     }
 };
