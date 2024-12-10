@@ -40,17 +40,17 @@ s = "aaabaaabaaa", n = 11, x = 3
 
 遍歷過程：
 i	s[i]	p	當前子串 [p, i]	長度 i - p + 1	cnt 狀態	是否滿足條件
-0	a	0	a	    1	    cnt[0] = 0	No
-1	a	0	aa	    2	    cnt[0] = 0	No
-2	a	0	aaa	    3	    cnt[0] = 1	No
-3	b	3	b	    1	    cnt[1] = 0	No
-4	a	4	a	    1	    cnt[0] = 1	No
-5	a	4	aa	    2	    cnt[0] = 1	No
-6	a	4	aaa	    3	    cnt[0] = 2	No
-7	b	7	b	    1	    cnt[1] = 0	No
-8	a	8	a	    1	    cnt[0] = 2	No
-9	a	8	aa	    2	    cnt[0] = 2	No
-10	a	8	aaa	    3	    cnt[0] = 3	Yes
+0	a	0	a	        1	    cnt[0] = 0	No
+1	a	0	aa	        2	    cnt[0] = 0	No
+2	a	0	aaa	        3	    cnt[0] = 1	No
+3	b	3	b	        1	    cnt[1] = 0	No
+4	a	4	a	        1	    cnt[0] = 1	No
+5	a	4	aa	        2	    cnt[0] = 1	No
+6	a	4	aaa	        3	    cnt[0] = 2	No
+7	b	7	b	        1	    cnt[1] = 0	No
+8	a	8	a	        1	    cnt[0] = 2	No
+9	a	8	aa	        2	    cnt[0] = 2	No
+10	a	8	aaa	        3	    cnt[0] = 3	Yes
 
 結果：true，因為 aaa 至少出現了三次。
 
