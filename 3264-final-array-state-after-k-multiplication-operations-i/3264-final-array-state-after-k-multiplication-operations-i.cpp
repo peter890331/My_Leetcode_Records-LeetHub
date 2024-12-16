@@ -9,3 +9,5 @@ public:
         return nums;
     }
 };
+
+// Reference from C++数组或vector求最大值最小值, https://www.cnblogs.com/Tang-tangt/p/9352093.html.
