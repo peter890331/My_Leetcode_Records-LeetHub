@@ -15,7 +15,6 @@ public:
         if (root == nullptr) return {};
 
         vector<int> ans;
-
         queue<TreeNode*> q;
         q.push(root);
         while(!q.empty()){
