@@ -31,7 +31,6 @@ int findTargetSumWays(int* nums, int numsSize, int target) {    // 有給 nums.s
     free(dp);           // 釋放記憶體
     return result;
     */
-
 }
 
 // Reference from An-Wen Deng's solution.
