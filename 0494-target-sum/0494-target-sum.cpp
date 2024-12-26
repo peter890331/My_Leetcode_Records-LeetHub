@@ -13,7 +13,7 @@ public:
         for (int i=0; i<n; i++){
             sum += nums[i];
         }
-        // int sum=accumulate(nums.begin(), nums.end(), 0);
+        // int sum = accumulate(nums.begin(), nums.end(), 0);
         int P = (target + sum) / 2;
 
         if (P<0 || (target + sum)%2!=0) return 0;  // 如果 P 為負數 或 如果 (target + sum) / 2 無法整除，找不到子集。
