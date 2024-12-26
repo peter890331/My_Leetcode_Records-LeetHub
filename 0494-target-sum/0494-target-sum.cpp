@@ -31,3 +31,5 @@ public:
         return dp[P];   // 返回總和為 P 的子集數量。
     }
 };
+
+// Reference from An-Wen Deng's solution.
