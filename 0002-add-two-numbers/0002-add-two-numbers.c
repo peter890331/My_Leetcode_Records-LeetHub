@@ -35,7 +35,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 
         now = now->next;
     }
-    return temp->next;;
+    return temp->next;
 }
 
 // Reference from Rahul Varma's solution.
