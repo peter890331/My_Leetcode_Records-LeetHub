@@ -8,7 +8,6 @@ class Solution(object):
         sum = 0
         for i in range(n):
             sum += derived[i]
-            
         return sum%2==0
 
 # Reference from conner1231230's solution.
