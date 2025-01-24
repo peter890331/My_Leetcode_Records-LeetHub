@@ -3,8 +3,8 @@ public:
     bool safe[10000], visited[10000];       // 宣告，在函數中再初始化。
     // vector<bool> safe(10000, false);     // 不能在全域範圍內初始化。
     // vector<bool> visited(10000, false);  // 不能在全域範圍內初始化。
-    
-    bool DFS(int now, vector<vector<int>>& graph){
+
+    bool DFS(int now, vector<vector<int>>& graph) {
         bool is_safe = visited[now] = true;
         for (int j: graph[now]){
             if (!visited[j]){
