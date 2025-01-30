@@ -10,7 +10,7 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         temp = None
-        while head is not None:
+        while head != None:
             next_ = head.next
             head.next = temp
             temp = head
