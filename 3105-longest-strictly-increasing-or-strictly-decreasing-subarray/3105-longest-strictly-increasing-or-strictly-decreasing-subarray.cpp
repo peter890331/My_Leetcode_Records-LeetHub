@@ -6,6 +6,7 @@ public:
         int temp_in = 1;
         int temp_de = 1;
         int n = nums.size();
+        if (n == 1) return 1;
         for (int i=1; i<n; i++){
             if (nums[i] > nums[i-1]){
                 temp_in++;
