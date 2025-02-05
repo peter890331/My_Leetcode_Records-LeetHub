@@ -7,13 +7,13 @@ public:
         int temp = -1;
         for (int i=0; i<n1; i++){
             if (s1[i] != s2[i]){
-                if (temp == -1) temp = i;
-                else {
+                if (temp == -1) temp = i;   // first different.
+                else {                      // second different.
                     swap(s1[i], s1[temp]);
-                    return s1 == s2;
+                    return s1 == s2;        // if two different.
                 }
             }
         }
-        return s1 == s2;
+        return s1 == s2;                    // if one different.
     }
 };
