@@ -13,6 +13,7 @@ public:
     ListNode* removeElements(ListNode* head, int val) {
         ListNode* dummy = new ListNode(0);  // Dummy node.
         dummy->next = head;                 // Dummy node 就是在鏈表表頭 head 前加一個節點指向 head，即 dummy -> head，保證鏈表的 head 不會在刪除操作中遺失。
+                                            // 也可以直接寫 ListNode* dummy = new ListNode(0, head);
         ListNode* now = head;
         ListNode* prev = dummy;
         while (now){
