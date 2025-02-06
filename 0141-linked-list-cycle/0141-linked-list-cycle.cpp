@@ -8,17 +8,18 @@
  */
 class Solution {
 public:
-    bool hasCycle(ListNode *head) {
-        unordered_map<ListNode*, bool> mp;
-        while (head){
-            if (mp[head]){
-                return true;
-            }
-            else {
-                mp[head] = true;
-                head = head->next;
-            }
+    bool hasCycle(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        while(fast!=NULL && fast->next!=NULL){
+            slow = slow->next;
+            fast = fast->next->next;
+            if(slow == fast) return true;
         }
         return false;
     }
 };
+
+// Floyd's Cycle Detection Algorithm（快慢指標法）.
+// 它能夠高效檢測鏈結串列是否存在環。相比於使用哈希表存儲節點的方法，它具有更好的空間複雜度（O(1) 而不是 O(N)）。
+// niits's solution.
