@@ -1,6 +1,6 @@
 class MyHashMap {
 private:
-    vector<int> myhashmap;                 // 在類別內宣告 myhashmap
+    vector<int> myhashmap;                 // 在類別內宣告 myhashmap。
 public:
     MyHashMap() {
         myhashmap.resize(1000001, -1);     // 然後在構造函數內初始化。
