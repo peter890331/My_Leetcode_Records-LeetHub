@@ -26,7 +26,7 @@ This plugin automatically pushes your code to GitHub when you pass all tests on 
 3. [花花酱, Hua Hua, YouTube][3]
 4. [Programming Live with Larry, YouTube][4]
 5. [Leetcode刷題學習筆記 – Time/Space Complexity, meyr543][5]
-6. [C語言: 超好懂的指標，初學者請進～][7]
+6. [C語言：超好懂的指標，初學者請進～][7]
 
 [2]: https://www.youtube.com/@wisdompeak
 [3]: https://www.youtube.com/@HuaHuaLeetCode
