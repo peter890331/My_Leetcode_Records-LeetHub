@@ -1,8 +1,8 @@
 class Solution {
 public:
-    int minimumSteps(string s) {
+    long long minimumSteps(string s) {
         int white = 0;  // To count the number of '1's
-        int res = 0;    // To store the result (minimum steps)
+        long long res = 0;    // To store the result (minimum steps)
         int n = s.length();
         
         for (int j = 0; j < n; ++j) {
