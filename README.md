@@ -25,8 +25,9 @@ This plugin automatically pushes your code to GitHub when you pass all tests on 
 2. [【每日一题】, Huifeng Guan, Github][6]
 3. [花花酱, Hua Hua, YouTube][3]
 4. [Programming Live with Larry, YouTube][4]
-5. [Leetcode刷題學習筆記 – Time/Space Complexity, meyr543][5]
-6. [C語言：超好懂的指標，初學者請進～][7]
+5. [Leetcode刷題學習筆記 – Time/Space Complexity, meyr543, HackMD][5]
+6. [C語言：超好懂的指標，初學者請進～, Lynn, 寫點科普][7]
+7. [用C語言跑完LeetCode 75 - Part 1 系列, eric1864, iT邦幫忙][8]
 
 [2]: https://www.youtube.com/@wisdompeak
 [3]: https://www.youtube.com/@HuaHuaLeetCode
@@ -34,3 +35,4 @@ This plugin automatically pushes your code to GitHub when you pass all tests on 
 [5]: https://hackmd.io/@meyr543/SygLtQ7ec
 [6]: https://github.com/wisdompeak/LeetCode
 [7]: https://kopu.chat/c%e8%aa%9e%e8%a8%80-%e8%b6%85%e5%a5%bd%e6%87%82%e7%9a%84%e6%8c%87%e6%a8%99%ef%bc%8c%e5%88%9d%e5%ad%b8%e8%80%85%e8%ab%8b%e9%80%b2%ef%bd%9e/
+[8]: https://ithelp.ithome.com.tw/users/20142880/ironman/5041
