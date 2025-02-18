@@ -28,4 +28,5 @@ public:
 };
 
 // ((I))(I)(I)(ID)(IDDD)
+// ((I)DDD)
 // Reference from 【每日一题】LeetCode 2375. Construct Smallest Number From DI String (aka LC 484. Find Permutation), https://youtu.be/7QXAWuEfWnI.
