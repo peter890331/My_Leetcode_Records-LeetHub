@@ -27,6 +27,6 @@ public:
     }
 };
 
-// ((I))(I)(I)(ID)(IDDD) = ((1))(2)(3)(54)(9876)
+// ((I))(I)(I)(ID)(IDDD) = (1)(2)(3)(54)(9876)
 // ((I)DDD) = (4321)
 // Reference from 【每日一题】LeetCode 2375. Construct Smallest Number From DI String (aka LC 484. Find Permutation), https://youtu.be/7QXAWuEfWnI.
