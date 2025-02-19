@@ -11,9 +11,9 @@ private:
 
         if (m == 0) return;                     // 結束。
 
-        int t = k / pow(2, m-1);
-        char ch = 'a' + t;
-        if (!ans.empty() && ch >= ans.back()){
+        int t = k / pow(2, m-1);                // 該位元可以跳過幾輪。
+        char ch = 'a' + t;                      // 該位元。
+        if (!ans.empty() && ch >= ans.back()){  // 如果前位元小於等於該位元。例如前位元是 a，該位元計算 t 跳過 0 輪，就不能也是 a，需要從 b 開始算。
             ch++;
         }
         ans.push_back(ch);
