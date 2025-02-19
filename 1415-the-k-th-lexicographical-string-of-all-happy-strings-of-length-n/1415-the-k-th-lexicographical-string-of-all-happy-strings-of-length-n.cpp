@@ -22,4 +22,5 @@ private:
     }
 };
 
+// (a)/b/c ... b/c ... = 3*2*...*2
 // Reference from 【每日一题】LeetCode 1415. The k-th Lexicographical String of All Happy Strings of Length n, https://youtu.be/vEBHHzFkKCM.
