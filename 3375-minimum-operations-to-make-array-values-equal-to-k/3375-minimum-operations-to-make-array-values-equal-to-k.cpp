@@ -2,16 +2,16 @@ class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
         set<int> s;
-        int equal = 1;
+        bool equal = true;
         for (int num: nums){
             if (num > k){
                 s.insert(num);
-                equal = 0;
+                equal = false;
             }
             else if (num < k){
                 return -1;
             }
         }
-        return (equal == 1)? 0: s.size();
+        return equal? 0: s.size();
     }
 };
