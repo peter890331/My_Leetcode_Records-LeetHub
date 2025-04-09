@@ -12,9 +12,6 @@ public:
                 return -1;
             }
         }
-        if (equal == 1){
-            return 0;
-        }
-        return s.size();
+        return (equal == 1)? 0: s.size();
     }
 };
