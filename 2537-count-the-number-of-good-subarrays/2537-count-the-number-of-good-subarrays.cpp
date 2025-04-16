@@ -12,3 +12,12 @@ public:
 };
 
 // Sung Jinwoo's solution.
+
+/*
+k += --mpp[nums[left++]]; 
+
+完整順序是：
+mpp[nums[left]]--;
+k += mpp[nums[left]];
+left++;
+*/
