@@ -7,6 +7,7 @@ public:
             total_count.insert(nums[i]);
         }
         int total_elements = total_count.size();
+
         unordered_map<int, int> window_count;
         int left = 0; int window_elements = 0; int ans = 0;
         for (int right=0; right<n; right++){
@@ -21,6 +22,8 @@ public:
                 left++;
             }
         }
+
         return ans;
+        
     }
 };
