@@ -28,7 +28,8 @@ C++ 的 std::unordered_map 使用雜湊表來儲存 key-value pair，而 pair<in
         }
     };
     unordered_map<pair<int, int>, int, hash_pair> mpp;
-
+    這樣就能讓 unordered_map 使用自定義的 hash 函數來處理 pair。
+    
 方法 2：改用 map（紅黑樹）而不是 unordered_map
     map<pair<int, int>, int> mpp;
     這是合法的，因為 pair<int,int> 有定義 < 比較運算子（字典序），所以 map 可以排序它，不需要 hash function。但：
