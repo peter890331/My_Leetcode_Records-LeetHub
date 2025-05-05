@@ -17,4 +17,4 @@ public:
     }
 };
 
-// dp[i] = dp[i-1] + dp[i-2] + 2 * (dp[0] + dp[1] + ... + dp[i-3])
+// dp[i] = dp[i-1] + dp[i-2] + 2 * (dp[0] + dp[1] + ... + dp[i-3]) = dp[i-1] + dp[i-2] + 2 * sum;
