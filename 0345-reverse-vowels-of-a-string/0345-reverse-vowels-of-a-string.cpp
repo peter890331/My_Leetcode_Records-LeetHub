@@ -5,12 +5,12 @@ public:
         int n = s_.size();
         int left = 0;
         int right = n-1;
-        vector<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        unordered_set<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
         while (left < right){
-            while (left <= n && count(vowels.begin(), vowels.end(), s_[left]) == 0){
+            while (left < n && vowels.find(s_[left]) == vowels.end()){
                 left++;
             }
-            while (right >= 0 && count(vowels.begin(), vowels.end(), s_[right]) == 0){
+            while (right > 0 && vowels.find(s_[right]) == vowels.end()){
                 right--;
             }
             if (left < right){
