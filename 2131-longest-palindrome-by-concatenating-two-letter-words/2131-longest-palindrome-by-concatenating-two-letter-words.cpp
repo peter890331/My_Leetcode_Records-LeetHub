@@ -6,7 +6,7 @@ public:
             count[word]++;
         }
         int ans = 0;
-        int same = false;
+        int middle = false;
         for (string word: words){
             string reverse_word = word;
             reverse(reverse_word.begin(), reverse_word.end());
@@ -19,7 +19,7 @@ public:
             }
             else {
                 if (count[word] == 1){
-                    same = true;
+                    middle = true;
                 }
                 else {
                     int pair = count[word] / 2;
@@ -29,7 +29,7 @@ public:
             }
         }
 
-        if (same == true){
+        if (middle == true){
             ans += 2;
         }
 
