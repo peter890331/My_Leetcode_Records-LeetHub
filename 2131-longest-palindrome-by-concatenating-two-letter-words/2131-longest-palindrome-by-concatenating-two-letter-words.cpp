@@ -28,12 +28,9 @@ public:
                 }
             }
         }
-
         if (middle == true){
             ans += 2;
         }
-
         return ans;
-
     }
 };
