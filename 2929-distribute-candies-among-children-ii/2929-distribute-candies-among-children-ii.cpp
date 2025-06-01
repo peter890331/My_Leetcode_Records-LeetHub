@@ -14,4 +14,5 @@ public:
     }
 };
 
+// 排列組合 + 排容原理。
 // Reference from LeetCode \U0001f7e1 2929. Distribute Candies Among Children II, https://gdst.dev/posts/LC-2929/.
