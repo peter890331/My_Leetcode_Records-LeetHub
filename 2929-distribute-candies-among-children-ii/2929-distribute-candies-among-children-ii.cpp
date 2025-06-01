@@ -2,7 +2,7 @@ class Solution {
 public:
     long long calc(int x) {  // comb(x, 2)
         if (x < 0) return 0;
-        return 1LL * x * (x - 1) / 2;
+        return 1LL * x * (x - 1) / 2;   // 1LL: long long 的常數 1
     }
     long long distributeCandies(int n, int limit) {
         if (n > 3 * limit) return 0;
