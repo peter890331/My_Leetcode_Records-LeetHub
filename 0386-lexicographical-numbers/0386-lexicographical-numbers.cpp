@@ -1,20 +1,25 @@
 class Solution {
 public:
-    static vector<int> lexicalOrder(int n) {
-        vector<int> ans(n);
-        int x=1;
-        for(int i=0; i<n; i++){
-            ans[i]=x;
-            if (x*10>n){
-                if (x==n) x/=10;
-                x++;
-                while(x%10==0) x/=10;
-            } 
-            else x*=10;          
+    vector<int> lexicalOrder(int n) {
+        vector<int> ans(n, 0);
+        int temp = 1;
+        for (int i=0; i<n; i++) {
+            ans[i] = temp;
+            if (temp * 10 > n) {
+                if (temp == n) {
+                    temp /= 10;
+                }
+                temp++;
+                while (temp % 10 == 0) {
+                    temp /= 10;
+                }
+            }
+            else {
+                temp *= 10;
+            }
         }
         return ans;
     }
 };
 
-// anwendeng's solution.
-// No time to watch yet. 
+// Reference from anwendeng's solution.
