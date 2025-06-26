@@ -19,8 +19,7 @@ public:
                 }
             }
 
-            // base 乘 2：下一位的權重
-            if (base <= k) {
+            if (base <= k) {                                // base 乘 2：下一位的權重
                 base *= 2;
             }
         }
